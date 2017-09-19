@@ -14,4 +14,4 @@ gcc -o calc calc.c -g
 ```
 
 ### License
-WTFPL &copy; 2016 Nick Barth
+WTFPL &copy; 2017 Nick Barth
