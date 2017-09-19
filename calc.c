@@ -297,7 +297,7 @@ int main(void) {
 
     ast = parser(&tokens);
     // print_expressions(ast, 0);
-		clean_t(tokens);
+    clean_t(tokens);
 
     printf(">> %d\n", evaluate(ast));
     clean_e(ast);
