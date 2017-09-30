@@ -62,7 +62,7 @@ void print_expressions(struct expr* expression, int prefix) {
   }
 }
 
-void issolate_expression(struct token** pointer) {
+void isolate_expression(struct token** pointer) {
   int b_match = 1;
   struct token* cursor;
   cursor = *pointer;
@@ -152,7 +152,7 @@ struct expr* parser(struct token** pointer) {
   // skip syntax check
   // cursor = (*pointer)->next;
   cursor = *pointer;
-  issolate_expression(&cursor);
+  isolate_expression(&cursor);
 
   while (cursor) {
     switch (cursor->type) {
