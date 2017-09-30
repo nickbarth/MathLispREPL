@@ -177,7 +177,7 @@ struct expr* parser(struct token** pointer) {
         expression->op = SUB_OP;
         break;
       case INT:
-        new_value = malloc(sizeof(struct value));
+        new_value = calloc(1, sizeof(struct value));
         new_value->type = NUM;
         new_value->value = cursor->value;
         new_value->expression = NULL;
