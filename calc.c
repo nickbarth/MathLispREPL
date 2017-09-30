@@ -289,7 +289,7 @@ int main(void) {
     printf("> ");
     fgets(str, 50, stdin);
 
-    running = strcmp(str, "q\n");
+    running = strncmp(str, "q\n", 2);
     if (!running) break;
 
     tokens = tokenizer(str);
